@@ -6,7 +6,7 @@ on:
 
 jobs:
   gate:
-    uses: quality-gate-test/.github/.github/workflows/gate-node.yml@main
+    uses: quality-gate-test/ci-gates/.github/workflows/gate-node.yml@main
     with:
       node-version: '20'
       package-manager: 'npm'
