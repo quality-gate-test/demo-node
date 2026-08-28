@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  gate:
+    uses: quality-gate-test/.github/.github/workflows/gate-node.yml@main
+    with:
+      node-version: '20'
+      package-manager: 'npm'
+      run-build: true
